@@ -14,9 +14,9 @@
       }
 
       .login-container {
-        width: 300px;
-        margin: 100px auto;
-        padding: 20px;
+        width: 400px; /* Increased container width */
+        margin: 50px auto; /* Increased margin for centering */
+        padding: 40px; /* Increased padding */
         border: 1px solid #ccc;
         border-radius: 5px;
         background-color: #fff;
@@ -26,26 +26,29 @@
       .login-container h2 {
         text-align: center;
         margin-bottom: 20px;
+        color: #333; /* Changed color for better visibility */
       }
 
       .login-container input[type="text"],
       .login-container input[type="password"] {
         width: calc(100% - 20px);
         margin: 10px;
-        padding: 10px;
+        padding: 12px; /* Increased padding for better input field appearance */
         border: 1px solid #ccc;
         border-radius: 5px;
+        font-size: 16px;
       }
 
       .login-container input[type="submit"] {
         width: 100%;
-        margin: 10px;
-        padding: 10px;
+        margin: 10px 0; /* Adjusted margin for better button placement */
+        padding: 12px; /* Increased padding for better button appearance */
         border: none;
         border-radius: 5px;
         background-color: #007bff;
         color: #fff;
         cursor: pointer;
+        font-size: 16px;
       }
 
       .login-container input[type="submit"]:hover {
@@ -56,6 +59,7 @@
       .login-container .register-now {
         text-align: center;
         margin-top: 10px;
+        color: #555; /* Changed color for better visibility */
       }
 
       .login-container .forgot-password a,
@@ -68,11 +72,19 @@
       .login-container .register-now a:hover {
         text-decoration: underline;
       }
+
+      /* Style for company logo */
+      .company-logo {
+        display: block;
+        margin: 0 auto 20px; /* Added margin to increase spacing between logo and form */
+        max-width: 100%; /* Ensure the logo doesn't exceed container width */
+      }
     </style>
   </head>
   <body>
     <div class="login-container">
-      <h2>Login</h2>
+      <!-- Company Logo -->
+      <img src="aaiclogo.jpg" alt="Company Logo" class="company-logo" />
       <form action="login_process.php" method="post">
         <input
           type="text"
